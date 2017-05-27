@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+	**
+	*@package     Andersongustavo_Sociallinks
+	*@author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	**
+-->
+<config>
+    <modules>
+        <AndersonGustavo_SlideProducts>
+            <version>1.0</version>
+        </AndersonGustavo_SlideProducts>
+    </modules>
+    <frontend>
+        <routers>
+            <andersongustavo_slideproducts>
+                <use>standard</use>
+                <args>
+                    <module>AndersonGustavo_SlideProducts</module>
+                    <frontName>teste</frontName>
+                </args>
+            </andersongustavo_slideproducts>
+        </routers>
+        <layout>
+            <updates>
+                <AndersonGustavo_SlideProducts>
+                    <file>slideproducts.xml</file>
+                </AndersonGustavo_SlideProducts>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <slideproducts>
+                <class>AndersonGustavo_SlideProducts_Model_System_Config_Source</class>
+            </slideproducts>
+        </models>
+        <blocks>
+            <slideproducts>
+                <class>AndersonGustavo_SlideProducts_Block</class>
+            </slideproducts>
+        </blocks>
+        <helpers>
+            <slideproducts>
+                <class>AndersonGustavo_SlideProducts_Helper</class>
+            </slideproducts>
+        </helpers>
+    </global>
+</config>

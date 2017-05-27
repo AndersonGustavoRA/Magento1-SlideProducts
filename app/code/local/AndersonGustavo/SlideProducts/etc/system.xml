@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+	**
+	*@package     Andersongustavo_Sociallinks
+	*@author      Anderson Gustavo Rodrigues Alves - anderson.quata@hotmail.com
+	**
+-->
+
+<config>
+    <tabs>
+        <andersongustavo translate="label" module="slideproducts">
+            <label>Slide Products</label>
+            <sort_order>100</sort_order>
+        </andersongustavo>
+    </tabs>
+
+    <sections>
+        <andersongustavo translate="label" module="slideproducts">
+            <label>Category Group</label>
+            <tab>andersongustavo</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <category translate="label" module="slideproducts">
+                    <label>Category Group Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled>
+                    </fields>
+                    <fields>
+                        <header translate="label">
+                            <label>Block Text:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <comment>Insert a block name. Ex: Features.</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header>
+                    </fields>
+                    <fields>
+                        <category_groups translate="label">
+                            <label>Category:</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>3</sort_order>
+                            <comment>Categories that should to appear</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>AndersonGustavo_SlideProducts_Model_System_Config_Source_Category</source_model>
+                        </category_groups>
+                    </fields>
+                </category>
+            </groups>
+        </andersongustavo>
+    </sections>
+</config>

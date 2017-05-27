@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <AndersonGustavo_SlideProducts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </AndersonGustavo_SlideProducts>
+    </modules>
+</config>

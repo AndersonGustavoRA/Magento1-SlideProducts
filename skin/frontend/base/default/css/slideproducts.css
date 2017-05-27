@@ -1,0 +1,7 @@
+.feature-products-wrapper{text-align: center;}
+.feature-products-header{margin: 20px;}
+.feature-categories ul{padding:10px 5%; margin:0px; list-style:none;}
+.feature-products{width: 30%; margin-left:2.5%; margin-bottom: 20px; display: inline-block;}
+.feature-products:hover{border: 2px solid #ddd;}
+.feature-products a{padding: 10px 20px; display: inline-block;}
+.feature-product-image img{width: 100%;}
